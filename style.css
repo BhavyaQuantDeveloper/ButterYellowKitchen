@@ -1318,7 +1318,17 @@ footer .footer-tagline {
 .icon-illus-moon      { background: radial-gradient(circle, #e4e0f5, #d4ceed); }
 .icon-illus-bath      { background: radial-gradient(circle, #dbeaf7, #c8dcf0); }
 .icon-illus-plants    { background: radial-gradient(circle, #daeee4, #c4e4d0); }
-.icon-illus-travel    { background: radial-gradient(circle, #fde4cc, #fcd4b4); }
+.icon-illus-travel       { background: radial-gradient(circle, #fde4cc, #fcd4b4); }
+.icon-illus-candles      { background: radial-gradient(circle, #fef4d4, #fce8b0); }
+.icon-illus-baking       { background: radial-gradient(circle, #fdf0dc, #fae4c0); }
+.icon-illus-jewellery    { background: radial-gradient(circle, #f8f0d8, #f0e4c0); }
+.icon-illus-music        { background: radial-gradient(circle, #ede8f8, #e0d4f0); }
+.icon-illus-morning      { background: radial-gradient(circle, #fde8d4, #fbd8bc); }
+.icon-illus-wine         { background: radial-gradient(circle, #f0dce8, #e8ccd8); }
+.icon-illus-fashion      { background: radial-gradient(circle, #f5ede0, #ede0cc); }
+.icon-illus-photography  { background: radial-gradient(circle, #f0ece8, #e8e0d8); }
+.icon-illus-florals      { background: radial-gradient(circle, #fce4ec, #f8d0e0); }
+.icon-illus-spa          { background: radial-gradient(circle, #dff0ea, #cce8de); }
 
 .icon-emoji { position: relative; z-index: 1; }
 
