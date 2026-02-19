@@ -1250,6 +1250,174 @@ footer .footer-tagline {
 .pin-life    .pin-quote { background: linear-gradient(145deg, #fef6ee, #fde8d4); }
 
 /* ========================
+   ICON GRID — shop
+   ======================== */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+@media (max-width: 640px) {
+  .icon-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+  padding: 1.4rem 1rem 1.6rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, rgba(253,246,227,0.9), rgba(254,252,247,0.95));
+  box-shadow: 0 4px 18px rgba(200,137,58,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+.icon-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(200,137,58,0.14);
+}
+.icon-card:active { transform: scale(0.97); }
+
+/* Illustration circle */
+.icon-illus {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 2.4rem;
+  transition: transform 0.3s ease;
+}
+.icon-card:hover .icon-illus { transform: rotate(-6deg) scale(1.08); }
+
+.icon-illus-skincare { background: radial-gradient(circle, #f9e4e8, #f2d0d6); }
+.icon-illus-avocado  { background: radial-gradient(circle, #dff0dc, #c8e4c2); }
+.icon-illus-books    { background: radial-gradient(circle, #ede8f5, #ddd4ee); }
+.icon-illus-sports   { background: radial-gradient(circle, #fce8d4, #f8d8bc); }
+.icon-illus-car      { background: radial-gradient(circle, #dbeaf7, #c8dff0); }
+.icon-illus-home     { background: radial-gradient(circle, #fef4d0, #fce8a8); }
+
+.icon-emoji { position: relative; z-index: 1; }
+
+/* Little sparkle dots on circle */
+.icon-sparkle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(200,137,58,0.35);
+  animation: sparkPulse 2.4s ease-in-out infinite;
+}
+.icon-sparkle.s1 { top: 10px; right: 14px; animation-delay: 0s; }
+.icon-sparkle.s2 { bottom: 12px; left: 10px; animation-delay: 0.8s; }
+.icon-sparkle.s3 { top: 20px; left: 8px;  animation-delay: 1.6s; }
+@keyframes sparkPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.5); }
+}
+
+.icon-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.3px;
+}
+.icon-hint {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+/* ========================
+   MESSAGE MODAL
+   ======================== */
+.msg-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(74,63,53,0.45);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.msg-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.msg-modal {
+  background: linear-gradient(145deg, #fef9f0, #fdf6e8);
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 2.8rem 2.4rem 2.4rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 24px 64px rgba(74,63,53,0.18);
+  transform: translateY(24px);
+  transition: transform 0.35s ease;
+}
+.msg-overlay.open .msg-modal { transform: translateY(0); }
+
+.msg-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--text-soft);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.2rem 0.4rem;
+  transition: color 0.2s;
+}
+.msg-close:hover { color: var(--text); }
+
+.msg-icon-display {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  animation: gentleBounce 0.5s ease;
+}
+@keyframes gentleBounce {
+  0%   { transform: scale(0.6); opacity: 0; }
+  70%  { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.msg-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+.msg-sig {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* ========================
    FLOATING FRUITS
    ======================== */
 .fruit-canvas {

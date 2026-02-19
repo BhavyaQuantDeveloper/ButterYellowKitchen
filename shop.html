@@ -24,67 +24,180 @@
     <p class="hero-tagline">things made with care, for you</p>
     <h1 class="shop-title">The Little Shop</h1>
     <div class="divider"></div>
-    <p class="hero-description">Digital guides &middot; Recipe collections &middot; Ritual kits</p>
+    <p class="hero-description">tap an icon &middot; receive a secret &middot; just for you</p>
   </section>
 
   <main class="shop-main">
-    <div class="product-grid">
+    <div class="icon-grid">
 
-      <!-- Product 1: The Slow Kitchen -->
-      <article class="product-card product-nourish">
-        <div class="product-illus" aria-hidden="true"></div>
-        <div class="product-body">
-          <span class="product-tag">Recipe Guide</span>
-          <h2 class="product-title">The Slow Kitchen: 30 Nourishing Recipes</h2>
-          <p class="product-desc">A beautifully formatted PDF of 30 intentional recipes for women who want to eat well without overwhelm. Includes shopping lists and seasonal notes.</p>
-          <div class="product-footer">
-            <span class="product-price">&#8377;499</span>
-            <a href="STRIPE_PAYMENT_LINK_HERE" class="buy-btn" target="_blank" rel="noopener">
-              Buy Now &rarr;
-            </a>
-          </div>
+      <!-- Skincare / Body Butter -->
+      <div class="icon-card" data-category="skincare">
+        <div class="icon-illus icon-illus-skincare">
+          <span class="icon-emoji">🧴</span>
+          <div class="icon-sparkle s1"></div>
+          <div class="icon-sparkle s2"></div>
+          <div class="icon-sparkle s3"></div>
         </div>
-      </article>
+        <span class="icon-label">Body Butter</span>
+        <span class="icon-hint">tap for a secret ✨</span>
+      </div>
 
-      <!-- Product 2: Skin Like a Ritual -->
-      <article class="product-card product-tend">
-        <div class="product-illus" aria-hidden="true"></div>
-        <div class="product-body">
-          <span class="product-tag">Skincare Guide</span>
-          <h2 class="product-title">Skin Like a Ritual: Your Gentle Skincare Blueprint</h2>
-          <p class="product-desc">A step-by-step PDF guide to building a skincare routine that actually feels like a ritual &mdash; not a chore. Includes ingredient glossary and product notes.</p>
-          <div class="product-footer">
-            <span class="product-price">&#8377;399</span>
-            <a href="STRIPE_PAYMENT_LINK_HERE" class="buy-btn" target="_blank" rel="noopener">
-              Buy Now &rarr;
-            </a>
-          </div>
+      <!-- Avocado -->
+      <div class="icon-card" data-category="avocado">
+        <div class="icon-illus icon-illus-avocado">
+          <span class="icon-emoji">🥑</span>
+          <div class="icon-sparkle s1"></div>
+          <div class="icon-sparkle s2"></div>
+          <div class="icon-sparkle s3"></div>
         </div>
-      </article>
+        <span class="icon-label">Nourish</span>
+        <span class="icon-hint">tap for a secret ✨</span>
+      </div>
 
-      <!-- Product 3: The Curious Woman's Reading List -->
-      <article class="product-card product-learn">
-        <div class="product-illus" aria-hidden="true"></div>
-        <div class="product-body">
-          <span class="product-tag">Curated Reading List</span>
-          <h2 class="product-title">The Curious Woman's Reading List</h2>
-          <p class="product-desc">A curated PDF of 50+ books across food, philosophy, science, and self &mdash; with short notes on why each one matters and how to read it. For women who read widely.</p>
-          <div class="product-footer">
-            <span class="product-price">&#8377;299</span>
-            <a href="STRIPE_PAYMENT_LINK_HERE" class="buy-btn" target="_blank" rel="noopener">
-              Buy Now &rarr;
-            </a>
-          </div>
+      <!-- Books -->
+      <div class="icon-card" data-category="books">
+        <div class="icon-illus icon-illus-books">
+          <span class="icon-emoji">📖</span>
+          <div class="icon-sparkle s1"></div>
+          <div class="icon-sparkle s2"></div>
+          <div class="icon-sparkle s3"></div>
         </div>
-      </article>
+        <span class="icon-label">Books</span>
+        <span class="icon-hint">tap for a secret ✨</span>
+      </div>
+
+      <!-- Sports -->
+      <div class="icon-card" data-category="sports">
+        <div class="icon-illus icon-illus-sports">
+          <span class="icon-emoji">🏃‍♀️</span>
+          <div class="icon-sparkle s1"></div>
+          <div class="icon-sparkle s2"></div>
+          <div class="icon-sparkle s3"></div>
+        </div>
+        <span class="icon-label">Move</span>
+        <span class="icon-hint">tap for a secret ✨</span>
+      </div>
+
+      <!-- Car -->
+      <div class="icon-card" data-category="car">
+        <div class="icon-illus icon-illus-car">
+          <span class="icon-emoji">🚗</span>
+          <div class="icon-sparkle s1"></div>
+          <div class="icon-sparkle s2"></div>
+          <div class="icon-sparkle s3"></div>
+        </div>
+        <span class="icon-label">Journey</span>
+        <span class="icon-hint">tap for a secret ✨</span>
+      </div>
+
+      <!-- Home -->
+      <div class="icon-card" data-category="home">
+        <div class="icon-illus icon-illus-home">
+          <span class="icon-emoji">🏡</span>
+          <div class="icon-sparkle s1"></div>
+          <div class="icon-sparkle s2"></div>
+          <div class="icon-sparkle s3"></div>
+        </div>
+        <span class="icon-label">Home</span>
+        <span class="icon-hint">tap for a secret ✨</span>
+      </div>
 
     </div>
   </main>
+
+  <!-- Message Modal -->
+  <div class="msg-overlay" id="msgOverlay">
+    <div class="msg-modal">
+      <button class="msg-close" id="msgClose">&times;</button>
+      <div class="msg-icon-display" id="msgIcon"></div>
+      <p class="msg-text" id="msgText"></p>
+      <span class="msg-sig">&mdash; butteryellowkitchen</span>
+    </div>
+  </div>
 
   <footer>
     <p class="footer-tagline">eat well, glow softly, learn always, master everything</p>
     <p>&copy; 2026 butteryellowkitchen &middot; made with warmth</p>
   </footer>
+
   <script src="fruits.js"></script>
+  <script>
+    const messages = {
+      skincare: [
+        "Your skin remembers every time you were kind to it. Keep going.",
+        "A woman who tends to her skin is a woman who has decided she is worth tending to.",
+        "Glow is not a product. It is the result of choosing yourself, consistently.",
+        "That extra step in your routine? That's love. In its quietest form.",
+        "She smoothed it in slowly, and somewhere in that small act, she felt held.",
+        "Your skin is the home your soul lives in. Treat it accordingly."
+      ],
+      avocado: [
+        "Food is not the enemy. Food is the love language you speak to your own body.",
+        "She ate slowly, tasted everything, and called it nourishment. She was right.",
+        "The woman who feeds herself well feeds everything else in her life well too.",
+        "Green, wholesome, unhurried. That's a whole philosophy in one fruit.",
+        "Eating with care is the quietest form of self-respect.",
+        "She chose the good ingredients. For her plate, and for her life."
+      ],
+      books: [
+        "Every book you finish makes you someone slightly different. Keep going.",
+        "The most dangerous thing a woman can do is read voraciously. Do it anyway.",
+        "She was always in the middle of three books and one beautiful becoming.",
+        "A well-read woman is a woman who can never truly be diminished.",
+        "Open a book. Somewhere in those pages is the version of you that's waiting.",
+        "She underlined sentences that felt like they were written just for her. They were."
+      ],
+      sports: [
+        "Your body moved today. That's enough. That's everything.",
+        "Strong is not a shape. It is a decision you make every single morning.",
+        "She didn't run to be thinner. She ran to feel like she could outrun anything.",
+        "Movement is medicine. The oldest, most honest kind.",
+        "Every time you show up for your body, your body shows up for you.",
+        "She stretched slowly in the morning light and decided today would be good."
+      ],
+      car: [
+        "The best trips are the ones where you return slightly changed and mostly better.",
+        "She drove with the windows down and her favourite song loud. She was completely fine.",
+        "Every journey begins with the quiet courage of leaving where you are.",
+        "Go somewhere that reminds you how big the world is and how capable you are.",
+        "She took the long route. It turned out to be the right one.",
+        "The road doesn't care about your doubts. It just keeps going. So can you."
+      ],
+      home: [
+        "A home that feels like you is the greatest luxury money can't fully buy.",
+        "Tend to your space the way you tend to yourself — with love and intention.",
+        "She lit a candle, made the bed, and called it an act of self-care. It was.",
+        "The softest rooms are made by women who decided comfort was not a compromise.",
+        "Home is not a place you find. It is a place you build, slowly, with love.",
+        "She arranged the flowers, made the bed, and felt like herself again."
+      ]
+    };
+
+    const overlay = document.getElementById('msgOverlay');
+    const msgText = document.getElementById('msgText');
+    const msgIcon = document.getElementById('msgIcon');
+    const msgClose = document.getElementById('msgClose');
+
+    const iconEmojis = {
+      skincare: '🧴', avocado: '🥑', books: '📖',
+      sports: '🏃‍♀️', car: '🚗', home: '🏡'
+    };
+
+    document.querySelectorAll('.icon-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const cat = card.dataset.category;
+        const pool = messages[cat];
+        const msg = pool[Math.floor(Math.random() * pool.length)];
+        msgIcon.textContent = iconEmojis[cat];
+        msgText.textContent = msg;
+        overlay.classList.add('open');
+      });
+    });
+
+    function closeModal() { overlay.classList.remove('open'); }
+    msgClose.addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  </script>
 </body>
 </html>
