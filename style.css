@@ -1095,3 +1095,27 @@ footer .footer-tagline {
   color: var(--cream);
   letter-spacing: 0.5px;
 }
+
+/* ========================
+   FLOATING FRUITS
+   ======================== */
+.fruit-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.fruit {
+  position: absolute;
+  bottom: -40px;
+  opacity: 0;
+  user-select: none;
+  animation: fruitFloat var(--dur, 16s) ease-in forwards;
+}
+@keyframes fruitFloat {
+  0%   { transform: translateX(0) rotate(0deg);   opacity: 0;   bottom: -40px; }
+  8%   { opacity: 0.75; }
+  88%  { opacity: 0.6; }
+  100% { transform: translateX(var(--sway, 15px)) rotate(20deg); opacity: 0; bottom: 105vh; }
+}
