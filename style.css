@@ -1114,8 +1114,8 @@ footer .footer-tagline {
   animation: fruitFloat var(--dur, 16s) ease-in forwards;
 }
 @keyframes fruitFloat {
-  0%   { transform: translateX(0) rotate(0deg);   opacity: 0;   bottom: -40px; }
-  8%   { opacity: 0.75; }
-  88%  { opacity: 0.6; }
-  100% { transform: translateX(var(--sway, 15px)) rotate(20deg); opacity: 0; bottom: 105vh; }
+  0%   { transform: translateX(0) rotate(0deg);              opacity: 0;   bottom: -40px; }
+  8%   { opacity: 0.8; }
+  88%  { opacity: 0.65; }
+  100% { transform: translateX(var(--sway, 15px)) rotate(var(--rot, 15deg)); opacity: 0; bottom: 105vh; }
 }

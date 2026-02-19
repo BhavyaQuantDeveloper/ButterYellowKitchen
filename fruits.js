@@ -1,8 +1,13 @@
 (function () {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  const FRUITS = ['🍓', '🍋', '🍒', '🫐', '🍑', '🍓', '🍒', '🍓'];
-  const MAX = 6;
+  const FRUITS = [
+    '🍓', '🍋', '🍒', '🫐', '🍑',
+    '🍇', '🍊', '🍉', '🍍', '🥝',
+    '🍌', '🍈', '🫒', '🍏', '🍎',
+    '🍓', '🍒', '🍋', '🫐', '🍑'   // weighted — commoner ones appear more
+  ];
+  const MAX = 10;
   let active = 0;
 
   const canvas = document.createElement('div');
@@ -15,11 +20,12 @@
     active++;
 
     const emoji = FRUITS[Math.floor(Math.random() * FRUITS.length)];
-    const size  = 14 + Math.random() * 10;          // 14–24px
-    const x     = 3 + Math.random() * 94;           // 3–97vw
-    const dur   = 12 + Math.random() * 10;          // 12–22s
-    const sway  = (Math.random() * 40 - 20) + 'px'; // –20 to +20px
-    const delay = Math.random() * -8;               // stagger start
+    const size  = 13 + Math.random() * 12;          // 13–25px
+    const x     = 2 + Math.random() * 96;           // 2–98vw
+    const dur   = 11 + Math.random() * 12;          // 11–23s
+    const sway  = (Math.random() * 50 - 25) + 'px'; // –25 to +25px
+    const rot   = Math.random() * 30 - 15;          // gentle rotation
+    const delay = Math.random() * -6;
 
     const f = document.createElement('span');
     f.className = 'fruit';
@@ -29,6 +35,7 @@
       `left:${x}vw`,
       `--dur:${dur}s`,
       `--sway:${sway}`,
+      `--rot:${rot}deg`,
       `animation-delay:${delay}s`
     ].join(';');
 
@@ -41,8 +48,11 @@
 
   function schedule() {
     spawnFruit();
-    setTimeout(schedule, 3000 + Math.random() * 3000); // every 3–6s
+    setTimeout(schedule, 2000 + Math.random() * 2500); // every 2–4.5s
   }
+
+  // Seed a few fruits immediately so the page isn't empty on load
+  for (let i = 0; i < 4; i++) setTimeout(spawnFruit, i * 600);
 
   schedule();
 })();

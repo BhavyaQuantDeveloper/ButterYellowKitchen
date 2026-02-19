@@ -8,8 +8,6 @@
 </head>
 <body>
 
-  <!-- Floating bubbles layer (fixed, behind everything) -->
-  <div class="bubble-canvas" id="bubbleCanvas"></div>
   <!-- Sparkle/light particles layer -->
   <div class="sparkle-canvas" id="sparkleCanvas"></div>
 
@@ -177,49 +175,7 @@
     /* Bail entirely if user prefers reduced motion */
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    /* ── BUBBLE ENGINE ─────────────────────────────────── */
-    (function bubbleEngine() {
-      const canvas = document.getElementById('bubbleCanvas');
-      const MAX_BUBBLES = 5;
-      let active = 0;
 
-      function spawnBubble() {
-        if (active >= MAX_BUBBLES) return;
-        active++;
-
-        const size = 8 + Math.random() * 24;           // 8–32 px
-        const x    = 5 + Math.random() * 90;           // 5–95 vw
-        const dur  = 8 + Math.random() * 10;           // 8–18 s
-        const sway = (Math.random() * 36 - 18) + 'px'; // –18 to +18 px
-        const hue  = Math.round(Math.random() * 40 - 20); // slight colour twist
-
-        const b = document.createElement('div');
-        b.className = 'bubble';
-        b.style.cssText = [
-          `width:${size}px`,
-          `height:${size}px`,
-          `left:${x}vw`,
-          `bottom:${-size}px`,
-          `--dur:${dur}s`,
-          `--sway:${sway}`,
-          `filter:hue-rotate(${hue}deg)`
-        ].join(';');
-
-        canvas.appendChild(b);
-
-        const cleanup = () => { b.remove(); active--; };
-        b.addEventListener('animationend', cleanup, { once: true });
-        // Safety timeout in case animationend never fires
-        setTimeout(cleanup, (dur + 1) * 1000);
-      }
-
-      function schedule() {
-        spawnBubble();
-        setTimeout(schedule, 2200 + Math.random() * 2600); // 2.2–4.8 s
-      }
-
-      schedule();
-    })();
 
     /* ── SPARKLE ENGINE ────────────────────────────────── */
     (function sparkleEngine() {
