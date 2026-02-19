@@ -1254,13 +1254,16 @@ footer .footer-tagline {
    ======================== */
 .icon-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
-  max-width: 780px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
 }
-@media (max-width: 640px) {
+@media (max-width: 780px) {
+  .icon-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 520px) {
   .icon-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -1303,7 +1306,19 @@ footer .footer-tagline {
 .icon-illus-books    { background: radial-gradient(circle, #ede8f5, #ddd4ee); }
 .icon-illus-sports   { background: radial-gradient(circle, #fce8d4, #f8d8bc); }
 .icon-illus-car      { background: radial-gradient(circle, #dbeaf7, #c8dff0); }
-.icon-illus-home     { background: radial-gradient(circle, #fef4d0, #fce8a8); }
+.icon-illus-home      { background: radial-gradient(circle, #fef4d0, #fce8a8); }
+.icon-illus-wellness  { background: radial-gradient(circle, #fce4ee, #f8cede); }
+.icon-illus-letters   { background: radial-gradient(circle, #fde8d8, #fad4bc); }
+.icon-illus-tea       { background: radial-gradient(circle, #fef0c0, #fce4a0); }
+.icon-illus-makeup    { background: radial-gradient(circle, #f5dde8, #eccad8); }
+.icon-illus-herbs     { background: radial-gradient(circle, #d8edd4, #c4e0be); }
+.icon-illus-art       { background: radial-gradient(circle, #e8e0f5, #d8cced); }
+.icon-illus-meditation{ background: radial-gradient(circle, #ede8f8, #e0d8f2); }
+.icon-illus-dance     { background: radial-gradient(circle, #fde0d4, #faccbc); }
+.icon-illus-moon      { background: radial-gradient(circle, #e4e0f5, #d4ceed); }
+.icon-illus-bath      { background: radial-gradient(circle, #dbeaf7, #c8dcf0); }
+.icon-illus-plants    { background: radial-gradient(circle, #daeee4, #c4e4d0); }
+.icon-illus-travel    { background: radial-gradient(circle, #fde4cc, #fcd4b4); }
 
 .icon-emoji { position: relative; z-index: 1; }
 
