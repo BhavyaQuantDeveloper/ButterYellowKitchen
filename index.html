@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhavya's Day</title>
+  <title>butteryellowkitchen</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 
   <header>
     <nav>
-      <a href="index.html" class="logo">Bhavya's Day</a>
+      <a href="index.html" class="logo">butteryellowkitchen</a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="philosophy.html">Philosophy</a>
@@ -25,98 +25,9 @@
     </nav>
   </header>
 
-  <div class="hero-wrapper scene-root" id="sceneRoot">
-
-    <!-- Layer 0: Sky (parallax 0.01) -->
-    <div class="scene-layer scene-sky" data-parallax="0.01" aria-hidden="true">
-      <div class="sunbeam sunbeam-1"></div>
-      <div class="sunbeam sunbeam-2"></div>
-      <div class="sunbeam sunbeam-3"></div>
-      <div class="dust-mote-layer" id="dustMoteLayer"></div>
-    </div>
-
-    <!-- Layer 1: Hills + garden outside window (parallax 0.02) -->
-    <div class="scene-layer scene-hills" data-parallax="0.02" aria-hidden="true">
-      <div class="hill hill-far"></div>
-      <div class="hill hill-mid"></div>
-      <div class="hill hill-near"></div>
-      <div class="garden-tree">
-        <div class="tree-trunk"></div>
-        <div class="tree-canopy tree-canopy-back"></div>
-        <div class="tree-canopy tree-canopy-front"></div>
-      </div>
-      <div class="garden-row">
-        <div class="garden-plant"></div>
-        <div class="garden-plant"></div>
-        <div class="garden-plant"></div>
-      </div>
-    </div>
-
-    <!-- Layer 2: Window + curtains (parallax 0.025) -->
-    <div class="scene-layer scene-window" data-parallax="0.025" aria-hidden="true">
-      <div class="window-frame" id="windowFrame">
-        <div class="window-panes">
-          <div class="pane pane-tl"></div>
-          <div class="pane pane-tr"></div>
-          <div class="pane pane-bl"></div>
-          <div class="pane pane-br"></div>
-          <div class="pane-bar pane-bar-h"></div>
-          <div class="pane-bar pane-bar-v"></div>
-        </div>
-        <div class="window-sill">
-          <div class="sill-cup" id="sillCup">
-            <div class="cup-body">
-              <div class="cup-handle"></div>
-              <div class="cup-liquid"></div>
-            </div>
-            <div class="cup-saucer"></div>
-            <div class="steam-container">
-              <div class="steam steam-1"></div>
-              <div class="steam steam-2"></div>
-              <div class="steam steam-3"></div>
-            </div>
-          </div>
-          <div class="sill-plant" id="sillPlant">
-            <div class="pot-body"></div>
-            <div class="pot-rim"></div>
-            <div class="herb-stems">
-              <div class="herb-stem stem-1"><div class="herb-leaf leaf-l"></div><div class="herb-leaf leaf-r"></div></div>
-              <div class="herb-stem stem-2"><div class="herb-leaf leaf-l"></div><div class="herb-leaf leaf-r"></div></div>
-              <div class="herb-stem stem-3"><div class="herb-leaf leaf-l"></div></div>
-            </div>
-          </div>
-          <div class="sill-book">
-            <div class="book-pages"></div>
-            <div class="book-cover"></div>
-          </div>
-        </div>
-      </div>
-      <div class="curtain curtain-left" id="curtainLeft"></div>
-      <div class="curtain curtain-right" id="curtainRight"></div>
-    </div>
-
-    <!-- Layer 3: Kitchen counter (parallax 0.035) -->
-    <div class="scene-layer scene-counter" data-parallax="0.035" aria-hidden="true">
-      <div class="counter-surface">
-        <div class="counter-edge"></div>
-        <div class="grain grain-1"></div>
-        <div class="grain grain-2"></div>
-        <div class="grain grain-3"></div>
-      </div>
-    </div>
-
-    <!-- Layer 4: Hero letter card on counter (parallax 0.045) -->
-    <div class="scene-layer scene-hero-card" data-parallax="0.045">
-      <section class="hero scene-letter" role="region" aria-label="Site introduction">
-        <p class="hero-tagline">a letter to the woman becoming herself</p>
-        <h1>Nourish the Body.<br>Tend the Skin.<br>Feed the Mind.<br>Master the Art.</h1>
-        <div class="divider"></div>
-        <p class="hero-description">Eating well &middot; Skincare as ritual &middot; Learning deeply &middot; Living like a polymath</p>
-      </section>
-    </div>
-
-    <!-- Clouds layer (parallax 0.015) -->
-    <div class="scene-layer cloud-layer" data-parallax="0.015" aria-hidden="true">
+  <!-- Hero wrapped in Ghibli sky gradient + drifting clouds -->
+  <div class="hero-wrapper">
+    <div class="cloud-layer" aria-hidden="true">
       <div class="cloud cloud-md"></div>
       <div class="cloud cloud-lg"></div>
       <div class="cloud cloud-sm"></div>
@@ -124,9 +35,12 @@
       <div class="cloud cloud-sm"></div>
     </div>
 
-    <!-- Scroll fade veil -->
-    <div class="scene-scroll-veil" id="sceneVeil" aria-hidden="true"></div>
-
+    <section class="hero">
+      <p class="hero-tagline">a letter to the woman becoming herself</p>
+      <h1>Nourish the Body.<br>Tend the Skin.<br>Feed the Mind.<br>Master the Art.</h1>
+      <div class="divider"></div>
+      <p class="hero-description">Eating well &middot; Skincare as ritual &middot; Learning deeply &middot; Living like a polymath</p>
+    </section>
   </div>
 
   <!-- Four Pillars -->
@@ -158,7 +72,7 @@
   <!-- Quote -->
   <div class="letter-block">
     <p>She decided to nourish herself the way she nourished everyone else &mdash; gently, deeply, and without apology.</p>
-    <span class="attribution">&mdash; Bhavya's Day</span>
+    <span class="attribution">&mdash; butteryellowkitchen</span>
   </div>
 
   <!-- Posts -->
@@ -171,7 +85,7 @@
     <div class="posts-grid">
 
       <!-- Featured Post -->
-      <article class="post-card featured category-begin">
+      <article class="post-card featured">
         <div class="featured-left">
           <span class="category">The Beginning</span>
           <h2><a href="posts/a-letter-to-begin.html">A Letter to the Woman Who Wants to Do It All</a></h2>
@@ -187,8 +101,7 @@
       </article>
 
       <!-- Latest Post -->
-      <article class="post-card category-master" data-reveal>
-        <div class="card-illus" aria-hidden="true"></div>
+      <article class="post-card">
         <span class="category">Master</span>
         <time>February 19, 2026</time>
         <h2><a href="posts/when-you-werent-ready.html">The Opportunity That Didn't Wait &mdash; and What Life Was Teaching You Instead</a></h2>
@@ -197,13 +110,7 @@
       </article>
 
       <!-- Post 2 -->
-      <article class="post-card category-nourish" data-reveal>
-        <div class="card-illus" aria-hidden="true">
-          <div class="illus-herb illus-herb-1"></div>
-          <div class="illus-herb illus-herb-2"></div>
-          <div class="illus-herb illus-herb-3"></div>
-          <div class="illus-bowl"></div>
-        </div>
+      <article class="post-card">
         <span class="category">Nourish</span>
         <time>February 16, 2026</time>
         <h2><a href="posts/philosophy-of-eating-well.html">The Quiet Philosophy of Eating Well</a></h2>
@@ -212,8 +119,7 @@
       </article>
 
       <!-- Post 3 -->
-      <article class="post-card category-tend" data-reveal>
-        <div class="card-illus" aria-hidden="true"></div>
+      <article class="post-card">
         <span class="category">Tend</span>
         <time>February 14, 2026</time>
         <h2><a href="posts/skincare-as-ritual.html">Skincare as a Love Letter to Yourself</a></h2>
@@ -222,8 +128,7 @@
       </article>
 
       <!-- Post 4 -->
-      <article class="post-card category-learn" data-reveal>
-        <div class="card-illus" aria-hidden="true"></div>
+      <article class="post-card">
         <span class="category">Learn</span>
         <time>February 12, 2026</time>
         <h2><a href="posts/becoming-a-learner.html">On Becoming a Woman Who Never Stops Learning</a></h2>
@@ -232,8 +137,7 @@
       </article>
 
       <!-- Post 5 -->
-      <article class="post-card category-master" data-reveal>
-        <div class="card-illus" aria-hidden="true"></div>
+      <article class="post-card">
         <span class="category">Master</span>
         <time>February 10, 2026</time>
         <h2><a href="posts/modern-polymath.html">The Modern Polymath: Doing Everything at Your Best</a></h2>
@@ -242,13 +146,7 @@
       </article>
 
       <!-- Post 6 -->
-      <article class="post-card category-nourish" data-reveal>
-        <div class="card-illus" aria-hidden="true">
-          <div class="illus-herb illus-herb-1"></div>
-          <div class="illus-herb illus-herb-2"></div>
-          <div class="illus-herb illus-herb-3"></div>
-          <div class="illus-bowl"></div>
-        </div>
+      <article class="post-card">
         <span class="category">Rituals</span>
         <time>February 8, 2026</time>
         <h2><a href="posts/morning-rituals.html">A Soft Morning Routine for the Woman Who Wants to Feel Alive</a></h2>
@@ -271,10 +169,8 @@
 
   <footer>
     <p class="footer-tagline">eat well, glow softly, learn always, master everything</p>
-    <p>&copy; 2026 Bhavya's Day &middot; made with warmth</p>
+    <p>&copy; 2026 butteryellowkitchen &middot; made with warmth</p>
   </footer>
-
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle time of day theme">☀️</button>
 
   <script>
   (function () {
@@ -406,174 +302,6 @@
           const cx = r.left + r.width  / 2;
           const cy = r.top  + r.height / 2;
           spawnHoverBurst(cx, cy);
-        });
-      });
-
-      /* Burst events from scene interactions */
-      document.addEventListener('burst', e => spawnHoverBurst(e.detail.cx, e.detail.cy));
-    })();
-
-    /* ── PARALLAX ENGINE ───────────────────────────────── */
-    (function parallaxEngine() {
-      if (window.matchMedia('(hover: none)').matches) return;
-      const layers = document.querySelectorAll('[data-parallax]');
-      if (!layers.length) return;
-      const layerData = Array.from(layers).map(el => ({ el, factor: parseFloat(el.dataset.parallax) || 0 }));
-      let mouseX = 0, mouseY = 0, currentX = 0, currentY = 0, rafId = null;
-      let centerX = window.innerWidth / 2, centerY = window.innerHeight / 2;
-      document.addEventListener('mousemove', e => {
-        mouseX = e.clientX - centerX; mouseY = e.clientY - centerY;
-        if (!rafId) rafId = requestAnimationFrame(tick);
-      });
-      function tick() {
-        rafId = null;
-        currentX += (mouseX - currentX) * 0.08;
-        currentY += (mouseY - currentY) * 0.08;
-        layerData.forEach(({ el, factor }) => {
-          el.style.transform = `translate3d(${currentX * factor}px,${currentY * factor}px,0)`;
-        });
-        if (Math.abs(mouseX - currentX) > 0.1 || Math.abs(mouseY - currentY) > 0.1) {
-          rafId = requestAnimationFrame(tick);
-        }
-      }
-      window.addEventListener('resize', () => { centerX = window.innerWidth/2; centerY = window.innerHeight/2; }, { passive: true });
-    })();
-
-    /* ── SCROLL ENGINE ─────────────────────────────────── */
-    (function scrollEngine() {
-      const sceneRoot = document.getElementById('sceneRoot');
-      let scrollRafId = null;
-      window.addEventListener('scroll', () => {
-        if (!scrollRafId) scrollRafId = requestAnimationFrame(() => {
-          scrollRafId = null;
-          const veil = Math.min(window.scrollY / (sceneRoot.offsetHeight * 0.8), 1);
-          sceneRoot.style.setProperty('--veil-opacity', veil.toFixed(3));
-        });
-      }, { passive: true });
-      const cards = document.querySelectorAll('[data-reveal]');
-      if (!('IntersectionObserver' in window)) { cards.forEach(c => c.classList.add('revealed')); return; }
-      const obs = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          const idx = Array.from(entry.target.parentElement.children).indexOf(entry.target);
-          entry.target.style.transitionDelay = `${idx * 0.1}s`;
-          entry.target.classList.add('revealed');
-          obs.unobserve(entry.target);
-        });
-      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-      cards.forEach(c => obs.observe(c));
-    })();
-
-    /* ── TIME-OF-DAY THEME ENGINE ──────────────────────── */
-    (function timeThemeEngine() {
-      const THEMES = [
-        [5,  11, 'theme-morning',   '☀️'],
-        [11, 16, 'theme-afternoon', '🌤️'],
-        [16, 20, 'theme-evening',   '🌅'],
-        [20, 29, 'theme-night',     '🌙'],
-      ];
-      const CLASSES = THEMES.map(t => t[2]);
-      const btn = document.getElementById('themeToggle');
-      let idx = 0;
-      function applyTheme(i) {
-        document.body.classList.remove(...CLASSES);
-        if (THEMES[i][2] !== 'theme-morning') document.body.classList.add(THEMES[i][2]);
-        btn.textContent = THEMES[i][3];
-        idx = i;
-        if (THEMES[i][2] === 'theme-night') spawnStars(); else document.querySelectorAll('.night-star').forEach(s => s.remove());
-      }
-      function spawnStars() {
-        const sky = document.querySelector('.scene-sky');
-        if (!sky || sky.querySelector('.night-star')) return;
-        for (let i = 0; i < 28; i++) {
-          const s = document.createElement('div');
-          s.className = 'night-star';
-          s.style.cssText = `left:${5+Math.random()*90}%;top:${2+Math.random()*55}%;--star-dur:${2+Math.random()*4}s;animation-delay:${-Math.random()*4}s`;
-          sky.appendChild(s);
-        }
-      }
-      const h = new Date().getHours();
-      const h24 = h < 5 ? h + 24 : h;
-      const auto = THEMES.findIndex(t => h24 >= t[0] && h24 < t[1]);
-      applyTheme(auto >= 0 ? auto : 0);
-      btn.addEventListener('click', () => applyTheme((idx + 1) % THEMES.length));
-    })();
-
-    /* ── DUST MOTE ENGINE ──────────────────────────────── */
-    (function dustMoteEngine() {
-      const layer = document.getElementById('dustMoteLayer');
-      if (!layer) return;
-      const MAX = 8; let active = 0;
-      function spawn() {
-        if (active >= MAX) return;
-        active++;
-        const size = 1.5 + Math.random() * 2;
-        const dur = 10 + Math.random() * 14;
-        const m = document.createElement('div');
-        m.className = 'dust-mote';
-        m.style.cssText = [
-          `width:${size}px`, `height:${size}px`,
-          `left:${25+Math.random()*50}%`, `top:${5+Math.random()*65}%`,
-          `--mote-dur:${dur}s`,
-          `--dx:${Math.random()*30-15}px`, `--dy:${-20-Math.random()*40}px`,
-          `--dx2:${Math.random()*20-10}px`, `--dy2:${-40-Math.random()*30}px`,
-          `animation-delay:${-Math.random()*dur}s`
-        ].join(';');
-        layer.appendChild(m);
-        setTimeout(() => { m.remove(); active--; }, (dur * 4 + 2) * 1000);
-      }
-      (function schedule() { spawn(); setTimeout(schedule, 1500 + Math.random() * 2000); })();
-    })();
-
-    /* ── SCENE INTERACTIONS + CONSTELLATION DRAWER ─────── */
-    (function sceneInteractions() {
-      // Cup click: tiny wobble
-      const cup = document.getElementById('sillCup');
-      if (cup) {
-        cup.addEventListener('click', () => {
-          cup.style.transform = 'rotate(5deg)';
-          setTimeout(() => { cup.style.transform = 'rotate(0deg)'; }, 150);
-        });
-      }
-      // Plant hover: dispatch burst event
-      const plant = document.getElementById('sillPlant');
-      if (plant) {
-        plant.addEventListener('mouseenter', () => {
-          const r = plant.getBoundingClientRect();
-          document.dispatchEvent(new CustomEvent('burst', { detail: { cx: r.left + r.width/2, cy: r.top + r.height/2 } }));
-        });
-      }
-      // Curtain proximity response to mouse
-      const cl = document.getElementById('curtainLeft');
-      const cr = document.getElementById('curtainRight');
-      const sr = document.getElementById('sceneRoot');
-      if (cl && cr && sr) {
-        document.addEventListener('mousemove', e => {
-          const rect = sr.getBoundingClientRect();
-          if (e.clientY > rect.bottom) return;
-          const f = 1 - Math.abs(e.clientX / rect.width - 0.5) * 2;
-          cl.style.transform = `scaleX(${1 + f * 0.04})`;
-          cr.style.transform = `scaleX(${1 + f * 0.04})`;
-        });
-      }
-      // Constellation illustrations for .category-master .card-illus
-      document.querySelectorAll('.category-master .card-illus').forEach(illus => {
-        const pts = [{x:20,y:60},{x:35,y:40},{x:50,y:25},{x:65,y:40},{x:80,y:60},{x:50,y:50},{x:50,y:70}];
-        const edges = [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[5,1]];
-        pts.forEach(p => {
-          const s = document.createElement('span');
-          s.className = 'illus-star';
-          s.style.cssText = `left:${p.x}%;top:${p.y}%`;
-          illus.appendChild(s);
-        });
-        edges.forEach(([a,b]) => {
-          const pa = pts[a], pb = pts[b];
-          const dx = pb.x - pa.x, dy = pb.y - pa.y;
-          const len = Math.sqrt(dx*dx + dy*dy);
-          const ang = Math.atan2(dy,dx) * 180 / Math.PI;
-          const line = document.createElement('div');
-          line.style.cssText = `position:absolute;width:${len}%;height:1px;left:${pa.x}%;top:${pa.y}%;transform:rotate(${ang}deg);transform-origin:left center;background:rgba(212,175,55,0.4);pointer-events:none`;
-          illus.appendChild(line);
         });
       });
     })();
