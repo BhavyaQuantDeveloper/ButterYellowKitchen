@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pins &mdash; butteryellowkitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">butteryellowkitchen</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="about.html">About</a>
+        <a href="pins.html">Pins</a>
+        <a href="shop.html">Shop</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="pins-hero">
+    <p class="hero-tagline">images that make you want to live slowly</p>
+    <h1 class="pins-title">The Pinboard</h1>
+    <div class="divider"></div>
+    <p class="hero-description">Nourish &middot; Tend &middot; Learn &middot; Live</p>
+  </section>
+
+  <!-- Filter tabs -->
+  <div class="pin-filters">
+    <button class="pin-filter active" data-filter="all">All</button>
+    <button class="pin-filter" data-filter="nourish">Nourish</button>
+    <button class="pin-filter" data-filter="tend">Tend</button>
+    <button class="pin-filter" data-filter="learn">Learn</button>
+    <button class="pin-filter" data-filter="life">Lifestyle</button>
+  </div>
+
+  <main class="pins-main">
+    <div class="masonry-grid" id="masonryGrid">
+
+      <!-- NOURISH pins -->
+      <div class="pin-card pin-nourish" data-category="nourish">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80&fit=crop" alt="Warm breakfast bowl" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Nourish</span>
+          <p>a breakfast that asks you to sit down and stay a while</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-tend" data-category="tend">
+        <div class="pin-quote">
+          <blockquote>"Your skin is the diary your body keeps. Read it with kindness."</blockquote>
+          <cite>tend &middot; butteryellowkitchen</cite>
+        </div>
+      </div>
+
+      <div class="pin-card pin-learn" data-category="learn">
+        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&q=80&fit=crop" alt="Stack of books" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Learn</span>
+          <p>a pile of books is a map of every world you haven't lived yet</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-nourish" data-category="nourish">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80&fit=crop" alt="Nourishing vegetable bowl" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Nourish</span>
+          <p>eating well is the most loving thing you can do for tomorrow's self</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-life" data-category="life">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80&fit=crop" alt="Morning coffee" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Lifestyle</span>
+          <p>the morning belongs to you before it belongs to anyone else</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-nourish" data-category="nourish">
+        <div class="pin-quote">
+          <blockquote>"Cook like someone you love is coming to dinner — even when that someone is you."</blockquote>
+          <cite>nourish &middot; butteryellowkitchen</cite>
+        </div>
+      </div>
+
+      <div class="pin-card pin-tend" data-category="tend">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&q=80&fit=crop" alt="Skincare ritual" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Tend</span>
+          <p>a skincare routine is just you, touching your own face with care</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-learn" data-category="learn">
+        <div class="pin-quote">
+          <blockquote>"She read everything. She questioned everything. She was becoming something extraordinary."</blockquote>
+          <cite>learn &middot; butteryellowkitchen</cite>
+        </div>
+      </div>
+
+      <div class="pin-card pin-life" data-category="life">
+        <img src="https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?w=500&q=80&fit=crop" alt="Soft morning light" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Lifestyle</span>
+          <p>slow mornings are a form of protest against a world that wants you rushed</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-nourish" data-category="nourish">
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=500&q=80&fit=crop" alt="Fresh produce" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Nourish</span>
+          <p>colour on your plate is the simplest form of nourishment</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-life" data-category="life">
+        <div class="pin-quote">
+          <blockquote>"She was building a life that felt like home — one slow, beautiful morning at a time."</blockquote>
+          <cite>lifestyle &middot; butteryellowkitchen</cite>
+        </div>
+      </div>
+
+      <div class="pin-card pin-tend" data-category="tend">
+        <img src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=500&q=80&fit=crop" alt="Beauty and self care" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Tend</span>
+          <p>beauty is what happens when a woman decides she is worth the effort</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-learn" data-category="learn">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500&q=80&fit=crop" alt="Writing in journal" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Learn</span>
+          <p>writing it down makes it real — journal your way to clarity</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-nourish" data-category="nourish">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80&fit=crop" alt="Sourdough bread" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Nourish</span>
+          <p>there is nothing more grounding than bread made with your own hands</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-learn" data-category="learn">
+        <img src="https://images.unsplash.com/photo-1444491741275-3747c53c99b4?w=500&q=80&fit=crop" alt="Cozy reading nook" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Learn</span>
+          <p>a reading corner is the most important room in a woman's life</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-tend" data-category="tend">
+        <div class="pin-quote">
+          <blockquote>"Tending to yourself is not indulgence. It is maintenance of the most important thing you own."</blockquote>
+          <cite>tend &middot; butteryellowkitchen</cite>
+        </div>
+      </div>
+
+      <div class="pin-card pin-life" data-category="life">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80&fit=crop" alt="Soft linen and flowers" loading="lazy">
+        <div class="pin-caption">
+          <span class="pin-tag">Lifestyle</span>
+          <p>softness is a superpower. let your home feel like an exhale</p>
+        </div>
+      </div>
+
+      <div class="pin-card pin-nourish" data-category="nourish">
+        <div class="pin-quote">
+          <blockquote>"The woman who feeds herself well feeds everything else in her life well too."</blockquote>
+          <cite>nourish &middot; butteryellowkitchen</cite>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-tagline">eat well, glow softly, learn always, master everything</p>
+    <p>&copy; 2026 butteryellowkitchen &middot; made with warmth</p>
+  </footer>
+
+  <script src="fruits.js"></script>
+  <script>
+    // Filter logic
+    const filters = document.querySelectorAll('.pin-filter');
+    const cards   = document.querySelectorAll('.pin-card');
+
+    filters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const cat = btn.dataset.filter;
+        cards.forEach(card => {
+          if (cat === 'all' || card.dataset.category === cat) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
