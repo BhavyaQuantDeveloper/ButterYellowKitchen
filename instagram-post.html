@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Post Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Caveat:wght@400;500;600&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #e8e0d8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Cormorant Garamond', serif;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .hint {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #999;
+    }
+
+    /* =====================
+       THE POST (1:1 square)
+       ===================== */
+    .post {
+      width: 540px;
+      height: 540px;
+      background: #fdf6e3;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem;
+    }
+
+    /* Decorative corner flourishes */
+    .post::before, .post::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 1.5px solid #f5e6b8;
+    }
+    .post::before { top: 20px; left: 20px; border-right: none; border-bottom: none; }
+    .post::after  { bottom: 20px; right: 20px; border-left: none; border-top: none; }
+
+    /* Extra corner lines */
+    .corner-tr, .corner-bl {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 1.5px solid #f5e6b8;
+    }
+    .corner-tr { top: 20px; right: 20px; border-left: none; border-bottom: none; }
+    .corner-bl { bottom: 20px; left: 20px; border-right: none; border-top: none; }
+
+    /* Soft pastel circle blobs in background */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(40px);
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .blob-1 { width: 220px; height: 220px; background: #f2d7d9; top: -60px; right: -40px; }
+    .blob-2 { width: 180px; height: 180px; background: #e8dff0; bottom: -40px; left: -30px; }
+    .blob-3 { width: 140px; height: 140px; background: #dce8d8; bottom: 60px; right: 20px; }
+
+    /* Logo at top */
+    .post-logo {
+      font-family: 'Caveat', cursive;
+      font-size: 1.05rem;
+      color: #c9956b;
+      letter-spacing: 1px;
+      margin-bottom: 0.3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Top divider line */
+    .top-line {
+      width: 40px;
+      height: 1px;
+      background: #f5e6b8;
+      margin-bottom: 1.2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Main heading */
+    .post-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: #4a3f35;
+      text-align: center;
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .post-heading em {
+      font-style: italic;
+      color: #c9956b;
+    }
+
+    .post-sub {
+      font-family: 'Caveat', cursive;
+      font-size: 0.95rem;
+      color: #b0a598;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Four pillars grid */
+    .pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pillar {
+      border-radius: 14px;
+      padding: 0.85rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .pillar:nth-child(1) { background: #fef9ee; border: 1px solid #f5e6b8; }
+    .pillar:nth-child(2) { background: #fdf0f1; border: 1px solid #f2d7d9; }
+    .pillar:nth-child(3) { background: #f5f1fb; border: 1px solid #e8dff0; }
+    .pillar:nth-child(4) { background: #f1f7f0; border: 1px solid #dce8d8; }
+
+    .pillar-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .pillar-text h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #4a3f35;
+      margin-bottom: 0.1rem;
+    }
+
+    .pillar-text p {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.6rem;
+      color: #8a7e72;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+    }
+
+    /* Bottom tagline */
+    .bottom-line {
+      width: 40px;
+      height: 1px;
+      background: #f5e6b8;
+      margin-top: 1.2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .post-tagline {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.55rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #b0a598;
+      margin-top: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* =====================
+       CAPTION COPY BOX
+       ===================== */
+    .caption-box {
+      width: 540px;
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid #f0e6d3;
+    }
+
+    .caption-box h3 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #b0a598;
+      margin-bottom: 1rem;
+    }
+
+    .caption-box p {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.82rem;
+      color: #4a3f35;
+      line-height: 1.8;
+      margin-bottom: 0.75rem;
+    }
+
+    .caption-box .hashtags {
+      font-size: 0.75rem;
+      color: #c9956b;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="hint">&#8593; Screenshot the square below to use as your Instagram post</p>
+
+  <!-- THE INSTAGRAM POST -->
+  <div class="post">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="corner-tr"></div>
+    <div class="corner-bl"></div>
+
+    <p class="post-logo">butteryellowkitchen</p>
+    <div class="top-line"></div>
+
+    <h2 class="post-heading">four ways to live<br><em>beautifully</em></h2>
+    <p class="post-sub">a philosophy for the woman who contains multitudes</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar-icon">&#127860;</span>
+        <div class="pillar-text">
+          <h3>Nourish</h3>
+          <p>Eat with intention & joy</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">&#127800;</span>
+        <div class="pillar-text">
+          <h3>Tend</h3>
+          <p>Skincare as self-respect</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">&#128214;</span>
+        <div class="pillar-text">
+          <h3>Learn</h3>
+          <p>Stay endlessly curious</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">&#10024;</span>
+        <div class="pillar-text">
+          <h3>Master</h3>
+          <p>The polymath spirit</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-line"></div>
+    <p class="post-tagline">eat well &middot; glow softly &middot; learn always &middot; master everything</p>
+  </div>
+
+  <!-- CAPTION TO COPY -->
+  <div class="caption-box">
+    <h3>Caption to copy &darr;</h3>
+    <p>She decided she didn't have to choose just one thing.</p>
+    <p>She could eat well <em>and</em> read philosophy. She could take care of her skin <em>and</em> study something new every week. She could be soft <em>and</em> sharp. Gentle <em>and</em> ambitious.</p>
+    <p>These are the four pillars of butteryellowkitchen &mdash; a space for the woman who wants to do everything, beautifully.</p>
+    <p>Link in bio &rarr; for the full letters.</p>
+    <p class="hashtags">#butteryellowkitchen #slowliving #womenwhothink #skincareritual #eatwell #perpetuallearner #polymathwomen #selfcare #intentionalliving #pastellife #womenwhoread #nourishyourself #softlife</p>
+  </div>
+
+</body>
+</html>
