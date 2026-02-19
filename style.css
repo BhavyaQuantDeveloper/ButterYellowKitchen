@@ -1113,6 +1113,13 @@ footer .footer-tagline {
   letter-spacing: 1px;
 }
 
+/* Pinterest embed wrapper */
+.pinterest-embed {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
 /* Filter tabs */
 .pin-filters {
   display: flex;
