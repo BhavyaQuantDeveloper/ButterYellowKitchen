@@ -178,7 +178,10 @@
   <section class="newsletter">
     <h3>Letters to Your Inbox</h3>
     <p class="newsletter-sub">a gentle nudge, every week or so</p>
-    <script async src="https://eomail5.com/form/9c4f08f8-116e-11f1-a117-d7c94122bdc1.js" data-form="9c4f08f8-116e-11f1-a117-d7c94122bdc1"></script>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); this.innerHTML='<p style=\'font-family:Caveat,cursive; font-size:1.1rem; color:#c8893a;\'>Thank you, darling. Talk soon.</p>'">
+      <input type="email" placeholder="your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
 
   <footer>
