@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>butteryellowkitchen</title>
+    <link>https://butteryellowkitchen.onrender.com</link>
+    <description>a letter to the woman becoming herself — eating well, skincare as ritual, learning deeply, living like a polymath</description>
+    <language>en</language>
+    <atom:link href="https://butteryellowkitchen.onrender.com/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>The Indian Skincare Edit: What Actually Works, From Someone Who Has Tried It All</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/the-indian-skincare-edit.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/the-indian-skincare-edit.html</guid>
+      <pubDate>Tue, 24 Feb 2026 10:00:00 +0530</pubDate>
+      <category>Tend</category>
+      <description>Niacinamide, not retinol. Re'equil, not whatever went viral. A ruthlessly honest guide to skincare products that actually work for Indian skin, in Indian weather, at Indian price points.</description>
+    </item>
+
+    <item>
+      <title>The Art of Wanting Everything: On Pursuing All Your Interests at Once</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/the-art-of-wanting-everything.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/the-art-of-wanting-everything.html</guid>
+      <pubDate>Tue, 24 Feb 2026 09:00:00 +0530</pubDate>
+      <category>Master</category>
+      <description>You have a sourdough starter, a half-read philosophy book, a sudden urge to learn Portuguese, and a business idea in your notes app. People say pick one. This letter says otherwise.</description>
+    </item>
+
+    <item>
+      <title>The Opportunity That Didn't Wait — and What Life Was Teaching You Instead</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/when-you-werent-ready.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/when-you-werent-ready.html</guid>
+      <pubDate>Thu, 19 Feb 2026 10:00:00 +0530</pubDate>
+      <category>Master</category>
+      <description>You did everything right. You prepared, you showed up, you gave it everything. And it still didn't happen. This is a letter about missing the door — and what to do in the quiet season that follows.</description>
+    </item>
+
+    <item>
+      <title>A Letter to the Woman Who Wants to Do It All</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/a-letter-to-begin.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/a-letter-to-begin.html</guid>
+      <pubDate>Wed, 18 Feb 2026 10:00:00 +0530</pubDate>
+      <category>The Beginning</category>
+      <description>This is for the woman who has always felt like she contains multitudes. Who wants to cook a beautiful meal and read philosophy before bed.</description>
+    </item>
+
+    <item>
+      <title>The Quiet Philosophy of Eating Well</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/philosophy-of-eating-well.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/philosophy-of-eating-well.html</guid>
+      <pubDate>Mon, 16 Feb 2026 10:00:00 +0530</pubDate>
+      <category>Nourish</category>
+      <description>Being a good eater isn't about diets or discipline. It's about paying attention — to what your body asks for, to where your food came from, to the simple act of sitting down.</description>
+    </item>
+
+    <item>
+      <title>Skincare as a Love Letter to Yourself</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/skincare-as-ritual.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/skincare-as-ritual.html</guid>
+      <pubDate>Sat, 14 Feb 2026 10:00:00 +0530</pubDate>
+      <category>Tend</category>
+      <description>Every evening, when you cleanse your face and smooth on something soft, you are saying: I am worth this tenderness. Here's how to build a ritual that actually feels like one.</description>
+    </item>
+
+    <item>
+      <title>On Becoming a Woman Who Never Stops Learning</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/becoming-a-learner.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/becoming-a-learner.html</guid>
+      <pubDate>Thu, 12 Feb 2026 10:00:00 +0530</pubDate>
+      <category>Learn</category>
+      <description>The most magnetic women I know are perpetual students — of language, of history, of the tiny beautiful details of the world. This is how to stay endlessly curious.</description>
+    </item>
+
+    <item>
+      <title>The Modern Polymath: Doing Everything at Your Best</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/modern-polymath.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/modern-polymath.html</guid>
+      <pubDate>Tue, 10 Feb 2026 10:00:00 +0530</pubDate>
+      <category>Master</category>
+      <description>You don't have to choose one thing. The world told you to specialize. But the richest lives are lived by women who refuse to shrink themselves into a single category.</description>
+    </item>
+
+    <item>
+      <title>A Soft Morning Routine for the Woman Who Wants to Feel Alive</title>
+      <link>https://butteryellowkitchen.onrender.com/posts/morning-rituals.html</link>
+      <guid>https://butteryellowkitchen.onrender.com/posts/morning-rituals.html</guid>
+      <pubDate>Sun, 08 Feb 2026 10:00:00 +0530</pubDate>
+      <category>Rituals</category>
+      <description>Not a productivity hack. Not a 5 AM grind. A gentle architecture for mornings that makes you feel like you belong to yourself before you belong to the world.</description>
+    </item>
+
+  </channel>
+</rss>
