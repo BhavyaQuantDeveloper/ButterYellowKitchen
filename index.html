@@ -178,8 +178,8 @@
   <section class="newsletter">
     <h3>Letters to Your Inbox</h3>
     <p class="newsletter-sub">a gentle nudge, every week or so</p>
-    <form class="newsletter-form" action="https://buttondown.email/api/emails/embed-subscribe/ButterYellowKitchen" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/ButterYellowKitchen','popupwindow')">
-      <input type="email" name="email" placeholder="your email" required>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); this.innerHTML='<p style=\'font-family:Caveat,cursive; font-size:1.1rem; color:#c8893a;\'>Thank you, darling. Talk soon.</p>'">
+      <input type="email" placeholder="your email" required>
       <button type="submit">Subscribe</button>
     </form>
   </section>
